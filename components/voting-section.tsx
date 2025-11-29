@@ -18,77 +18,103 @@ const categories = [
   { id: "fic", label: "Melhor Fic", icon: "📖" },
 ]
 
-const nominees = {
+const nominees = 
+  export const kylieAwardsData = {
+  // Slide 5-6: Melhor EP
   ep: [
-    { id: 1, title: "B.O.Y (Best of You)", artist: "Kylie Cantrall", image: "/purple-album-cover.png" },
-    { id: 2, title: "10 Minute Songs (Volume 1)", artist: "Kylie Cantrall", image: "/ep-cover-neon.jpg" },
-    { id: 3, title: "Nights Edition", artist: "Kylie Cantrall", image: "/music-ep-blue.jpg" },
+    { id: 1, title: "B.O.Y", artist: "Kylie Cantrall", image: "/Boy.jpg" },
+    { id: 2, title: "B.O.Y (Delux)", artist: "Kylie Cantrall", image: "/boy-delux.jpg" },
+    { id: 3, title: "10 Minute Songs (Volume 1)", artist: "Kylie Cantrall", image: "/10minutes-songs.avif" },
   ],
+
+  // Slide 9-10: Melhor Música
   musica: [
-    { id: 4, title: "Feeling Some Type of Way", artist: "Kylie Cantrall", image: "/music-single-cover.jpg" },
-    { id: 5, title: "Red", artist: "Kylie Cantrall", image: "/pop-song-cover.jpg" },
-    { id: 6, title: "Crazy Town", artist: "Kylie Cantrall", image: "/music-artwork.jpg" },
-    { id: 7, title: "That's What I Want", artist: "Kylie Cantrall", image: "/single-artwork.jpg" },
+    { id: 4, title: "Elastic", artist: "Kylie Cantrall", image: "/Elastic.jpg" },
+    { id: 5, title: "Denim", artist: "Kylie Cantrall", image: "/Denim.jpg" },
+    { id: 6, title: "Goodie Bag", artist: "Kylie Cantrall", image: "/Goodie-Bag.jpg" },
+    { id: 7, title: "Red", artist: "Kylie Cantrall", image: "/Red.jpg" },
+    { id: 8, title: "Boy For A Day", artist: "Kylie Cantrall", image: "/Boy-for-a-day.jpg" },
+    { id: 9, title: "Like A Movie", artist: "Kylie Cantrall", image: "/10minutes-songs.avif" },
   ],
+
+  // Slide 11-12: Melhor Música do EP B.O.Y
   boy: [
-    { id: 8, title: "Best of You", artist: "EP B.O.Y", image: "/purple-album-cover.png" },
-    { id: 9, title: "Red Hearts", artist: "EP B.O.Y", image: "/pop-song-cover.jpg" },
-    { id: 10, title: "Falling", artist: "EP B.O.Y", image: "/music-artwork.jpg" },
-    { id: 11, title: "Dreams", artist: "EP B.O.Y", image: "/single-artwork.jpg" },
+    { id: 10, title: "RAISED BY RIHANNA", artist: "EP B.O.Y", image: "/Boy.jpg" },
+    { id: 11, title: "BOY IS OURS", artist: "EP B.O.Y", image: "/Boy.jpg" },
+    { id: 12, title: "Boy For A Day", artist: "EP B.O.Y", image: "/Boy-for-a-day.jpg" },
+    { id: 13, title: "Goodie Bag", artist: "EP B.O.Y", image: "/Goodie-Bag.jpg" },
+    { id: 14, title: "Denim", artist: "EP B.O.Y", image: "/Denim.jpg" },
+    { id: 15, title: "See U Tonight", artist: "EP B.O.Y", image: "/SEE-U-TONIGTH.jpg" },
   ],
+
+  // Slide 13-14: Melhor Música do EP 10 Minute Songs (Vol 1)
   "10min": [
-    { id: 12, title: "10 Minute Love Song", artist: "10 Minute Songs Vol. 1", image: "/ep-cover-neon.jpg" },
-    { id: 13, title: "Extended Dreams", artist: "10 Minute Songs Vol. 1", image: "/music-ep-blue.jpg" },
-    { id: 14, title: "Long Night", artist: "10 Minute Songs Vol. 1", image: "/music-single-cover.jpg" },
+    { id: 16, title: "Like A Movie", artist: "10 Minute Songs", image: "/10minutes-songs.avif" },
+    { id: 17, title: "Mascara", artist: "10 Minute Songs", image: "/10minutes-songs.avif" },
+    { id: 18, title: "Dear Diary", artist: "10 Minute Songs", image: "/10minutes-songs.avif" },
+    { id: 19, title: "Put The Record On", artist: "10 Minute Songs", image: "/10minutes-songs.avif" },
   ],
+
+  // Slide 15-16: Melhor Visualizer/Clip
   visualizer: [
-    { id: 15, title: "Feeling Some Type of Way (Visualizer)", artist: "Music Video", image: "/music-single-cover.jpg" },
-    { id: 16, title: "Red (Official Video)", artist: "Music Video", image: "/pop-song-cover.jpg" },
-    { id: 17, title: "Crazy Town (Clip)", artist: "Music Video", image: "/music-artwork.jpg" },
-    { id: 18, title: "That's What I Want (Visual)", artist: "Music Video", image: "/single-artwork.jpg" },
+    { id: 20, title: "Boy For A Day", artist: "Visualizer", image: "/Boy-for-a-day.jpg" },
+    { id: 21, title: "See U Tonight", artist: "Visualizer", image: "SEE-U-TONIGTH.jpg" },
+    { id: 22, title: "Denim", artist: "Visualizer", image: "/Denim.jpg" },
+    { id: 23, title: "Goodie Bag", artist: "Visualizer", image: "/Goodie-Bag.jpg" },
+    { id: 24, title: "99", artist: "Visualizer", image: "/99.jpg" },
   ],
+
+  // Slide 17-18: Melhor Coreografia
   coreografia: [
-    { id: 19, title: "Red Performance", artist: "Coreografia", image: "/stage-outfit.jpg" },
-    { id: 20, title: "Feeling Some Type of Way Dance", artist: "Coreografia", image: "/music-single-cover.jpg" },
-    { id: 21, title: "Awards Show Performance", artist: "Coreografia", image: "/award-show-outfit.jpg" },
-    { id: 22, title: "TikTok Dance Challenge", artist: "Coreografia", image: "/pop-song-cover.jpg" },
+    { id: 25, title: "Elastic", artist: "Dance", image: "/Boy-for-a-day.jpg" },
+    { id: 26, title: "Red", artist: "Dance", image: "/Red.jpg" },
+    { id: 27, title: "See U Tonight", artist: "Dance", image: "/SEE-U-TONIGTH.jpg" },
+    { id: 28, title: "Boy For A Day", artist: "Dance", image: "/dance/boy-day.jpg" },
+    { id: 29, title: "Goodie Bag", artist: "Dance", image: "/Boy-for-a-day.jpg" },
+    { id: 30, title: "Texts go Green", artist: "Dance", image: "/Texts-go-green.jpg" },
   ],
+
+  // Slide 19-20: Melhor Filme/Série (Atuação)
   atuacao: [
-    { id: 23, title: "Descendants: The Rise of Red", artist: "Disney+", image: "/red-carpet-gown.jpg" },
-    { id: 24, title: "Gabby Duran & The Unsittables", artist: "Disney Channel", image: "/award-show-outfit.jpg" },
-    { id: 25, title: "The Phantom", artist: "Film", image: "/fashion-street-style.jpg" },
+    { id: 31, title: "Gabby Duran", artist: "Série", image: "/Gabby-Duran.jpg" },
+    { id: 32, title: "Descendentes 4", artist: "Filme", image: "/Descendentes4.jpg" },
+    { id: 33, title: "High School Musical: The Series", artist: "Série", image: "/High-School-Musical.jpg" },
   ],
+
+  // Slide 7-8: Melhor Outfit
   outfit: [
-    { id: 26, title: "Met Gala 2024", artist: "Red Carpet", image: "/red-carpet-gown.jpg" },
-    { id: 27, title: "MTV Awards Look", artist: "Awards Show", image: "/award-show-outfit.jpg" },
-    { id: 28, title: "Street Style", artist: "Casual", image: "/fashion-street-style.jpg" },
-    { id: 29, title: "Magazine Photoshoot", artist: "Editorial", image: "/abstract-fashion-editorial.png" },
-    { id: 30, title: "Concert Outfit", artist: "Performance", image: "/stage-outfit.jpg" },
+    { id: 34, title: "Premiere Descendentes 4", artist: "Red Carpet", image: "/PremiereDescendentes4.jpg" },
+    { id: 35, title: "Premiere Zombies 4", artist: "Red Carpet", image: "/PremiereZombies4.jpg" },
+    { id: 36, title: "Grammy 2024", artist: "Red Carpet", image: "/Grammy2024.jpg" },
   ],
+
+  // Slide 3-4: Melhor Feat
   feat: [
-    { id: 31, title: "That's What I Want", artist: "feat. Artist 1", image: "/kylie-cantrall-collaboration.jpg" },
-    { id: 32, title: "Crazy Town", artist: "feat. Artist 2", image: "/kylie-music-collab.jpg" },
-    { id: 33, title: "Feeling Some Kinda Way", artist: "feat. Artist 3", image: "/duet-performance.jpg" },
-    { id: 34, title: "Red Hearts", artist: "feat. Artist 4", image: "/music-collaboration.png" },
+    { id: 37, title: "See U Tonight", artist: "Feat", image: "/SEE-U-TONIGTH.jpg" },
+    { id: 38, title: "What's My Name", artist: "Feat", image: "/What's-my-name.jpg" },
+    { id: 39, title: "Usure", artist: "Feat", image: "/UNSURE.jpg" },
+    { id: 40, title: "Wickedly Sweet", artist: "Feat", image: "/Wickedly-Sweet.jpg" },
+    { id: 41, title: "Sad Boy", artist: "Feat", image: "/Sad-Boy.jpg" },
+    { id: 42, title: "Fight Of Our Lives", artist: "Feat", image: "/Fight-of-our-lives.jpg" },
   ],
+
+  // Slide 21-22: Melhor Filme/Série (Música)
   "musica-filme": [
-    {
-      id: 35,
-      title: "What's My Name (Red Version)",
-      artist: "Descendants: The Rise of Red",
-      image: "/red-carpet-gown.jpg",
-    },
-    { id: 36, title: "Life Is Sweeter", artist: "Descendants: The Rise of Red", image: "/pop-song-cover.jpg" },
-    { id: 37, title: "Red", artist: "Descendants: The Rise of Red", image: "/music-artwork.jpg" },
-    { id: 38, title: "Love Ain't It", artist: "Descendants: The Rise of Red", image: "/single-artwork.jpg" },
+    { id: 43, title: "Red", artist: "Descendants 4", image: "/Red.jpg" },
+    { id: 44, title: "Calling All The Monsters", artist: "Soundtrack", image: "/calling-all-the-monters.jpg" },
+    { id: 45, title: "Feeling Some Kinda Way", artist: "Soundtrack", image: "/Feeling-some-kinda-way.jpg" },
+    { id: 46, title: "What's My Name (Red Version)", artist: "Descendants 4", image: "/What's-my-name.jpg" },
+    { id: 47, title: "Fight Of Our Lives", artist: "Soundtrack", image: "/Fight-of-our-lives.jpg" },
   ],
+
   fic: [
-    { id: 39, title: "Love in Hollywood", artist: "Romance", image: "/romance-book-cover.png" },
-    { id: 40, title: "The Rising Star", artist: "Drama", image: "/story-book-cover.jpg" },
-    { id: 41, title: "Red Carpet Dreams", artist: "Fiction", image: "/fanfic-cover.jpg" },
-    { id: 42, title: "Stage Lights", artist: "AU", image: "/placeholder.svg?height=300&width=300" },
+    { id: 48, title: "Entre Astros e Trofeus", artist: "Fanfic", image: "/EntreAstroseTrofeus.jpg" },
+    { id: 49, title: "Rivais até o Último Salto", artist: "Fanfic", image: "/RivaisateoUltimoSalto.jpg" },
+    { id: 50, title: "Sussurros da Meia-Noite", artist: "Fanfic", image: "/SussurrosdaMeiaNoite.jpg" },
+    { id: 51, title: "Na Sombra do Pecado", artist: "Fanfic", image: "/NaSombradoPecado.jpg" },
+    { id: 52, title: "The Rain", artist: "Fanfic", image: "/TheRain.jpg" },
   ],
-}
+};
 
 export function VotingSection() {
   const [activeCategory, setActiveCategory] = useState("ep")
